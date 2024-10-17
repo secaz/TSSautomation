@@ -24,7 +24,7 @@ def automate_text(text_to_paste, repeat_count, additional_actions=None):
         if additional_actions:
             for action in additional_actions:
                 action()  # Execute any additional actions (like pressing enter)
-        pyautogui.hotkey('ctrl', 'tab')  # Switch tabs
+        pyautogui.hotkey('shift', 'tab')  # Switch tabs
         time.sleep(0.2)  # Optional small delay between iterations for stability
 
     result_label.config(text="Automation completed.")
